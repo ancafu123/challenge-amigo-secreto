@@ -15,7 +15,6 @@ function agregarAmigo() {
     }
     else{
         amigos.push(nombreAmigo);
-        console.log(amigos)
         actualizarListaAmigos(); 
         document.getElementById("amigo").value = ""
     }             
@@ -33,8 +32,7 @@ function actualizarListaAmigos(){
 
 function sortearAmigo(){
     if (amigos.length === 0) {
-        alert("Lista vacia, no se puede realizar el sorteo.")
-        
+        alert("Lista vacia, no se puede realizar el sorteo.") 
     }
     else {
         let resultadoSorteo = document.getElementById("resultado")
